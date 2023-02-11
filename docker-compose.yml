@@ -1,7 +1,7 @@
 version: '3'
 services:
   
-  #PHP Service
+  #PHP
   app:
     build:
       args:
@@ -23,7 +23,7 @@ services:
     networks:
       - app-network
 
-  #Nginx Service
+  #Nginx
   webserver:
     image: nginx:alpine
     container_name: webserver
@@ -39,7 +39,7 @@ services:
     networks:
       - app-network
 
-  #MySQL Service
+  #MySQL
   db:
     image: mysql:5.7.22
     container_name: db
