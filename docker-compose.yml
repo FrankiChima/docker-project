@@ -6,7 +6,7 @@ services:
     build:
       args:
         user: franki
-        uid: 1000
+        uid: 1001
       context: .
       dockerfile: Dockerfile
     image: franki/php
